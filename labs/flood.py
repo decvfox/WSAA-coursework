@@ -9,7 +9,7 @@ url = 'https://waterlevel.ie/geojson/latest/'
 response = requests.get(url, verify=False)
 data = response.json()
 
-with open ("flood_dump.json", "w") as fp: json.dump(data, fp)
+#with open ("flood_dump.json", "w") as fp: json.dump(data, fp)
 
 features = data["features"]
 for feature in features:
